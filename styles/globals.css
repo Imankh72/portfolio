@@ -24,7 +24,7 @@ li {
 }
 
 @layer components {
-  .navLink {
-    @apply text-xl transition duration-200 hover:opacity-75;
+  .desktopNavBar {
+    transform: translateX(-50%);
   }
 }
