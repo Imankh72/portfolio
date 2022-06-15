@@ -1,6 +1,9 @@
 import { useState } from "react";
+import Link from "next/link";
+
 import MenuIcon from "./MenuIcon";
 import CloseIcon from "./CloseIcon";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -29,13 +32,22 @@ const Navbar = () => {
         } transition-all duration-500 ease-in-out sm:w-[30%] md:flex-row md:w-auto md:h-auto md:static md:space-y-0 md:items-center md:gap-10 md:justify-center`}
       >
         {links.map((link, index) => (
-          <li
-            key={index}
-            className="p-2 hover:cursor-pointer hover:text-gray-800 hover:bg-white w-[95%] transition-all rounded md:w-auto md:rounded-md "
-          >
-            {link}
-          </li>
+          <Link href={`/${link.toLowerCase()}`} key={index}>
+            <a className="p-2 hover:cursor-pointer hover:text-gray-800 hover:bg-white w-[95%] transition-all rounded md:w-auto md:rounded-md">
+              {link}
+            </a>
+          </Link>
         ))}
+        <li>
+          <a href="https://www.linkedin.com/in/iman-khorshidi/">
+            <FaLinkedin className="text-3xl ml-2 mb-2 mt-1 cursor-pointer md:mb-0 md:mt-0" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Imankh72">
+            <FaGithub className="text-3xl ml-2 cursor-pointer" />
+          </a>
+        </li>
       </ul>
     </nav>
   );
