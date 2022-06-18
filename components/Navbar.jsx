@@ -24,7 +24,9 @@ const Navbar = () => {
           />
         )}
 
-        <span>Portfolio </span>
+        <Link href="/">
+          <a className="text-2xl">Iman Khorshidi</a>
+        </Link>
       </div>
       <ul
         className={`flex flex-col space-y-4 absolute w-[60%] h-[100vh] bg-gray-800 py-5 px-2 ${
@@ -39,12 +41,12 @@ const Navbar = () => {
           </Link>
         ))}
         <li className="transition-all md:hover:scale-125 md:ml-72">
-          <a href="https://www.linkedin.com/in/iman-khorshidi/">
-            <FaLinkedin className="transition-all text-3xl ml-2 mb-2 mt-1 cursor-pointer hover:scale-125 md:mb-0 md:mt-0 md:hover:scale-100" />
+          <a href="https://www.linkedin.com/in/iman-khorshidi/" target="_blank">
+            <FaLinkedin className="transition-all text-3xl ml-2 mb-2 mt-12 cursor-pointer hover:scale-125 md:mb-0 md:mt-0 md:hover:scale-100" />
           </a>
         </li>
         <li className="transition-all md:hover:scale-125">
-          <a href="https://github.com/Imankh72">
+          <a href="https://github.com/Imankh72" target="_blank">
             <FaGithub className="transition-all text-3xl ml-2 cursor-pointer hover:scale-125 md:hover:scale-100" />
           </a>
         </li>
