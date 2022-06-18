@@ -10,7 +10,7 @@ const Navbar = () => {
   const links = ["Projects", "Technologies", "About"];
 
   return (
-    <nav className="bg-gray-800 w-[100%] h-[60px] fixed top-0 left-0 text-white shadow-lg shadow-black/30 text-xl px-2 md:flex md:justify-between md:max-w-7xl xl:left-[50%] xl:desktopNavBar">
+    <nav className="navBar">
       <div className="flex items-center justify-between h-full md:gap-3">
         {open ? (
           <CloseIcon
@@ -38,14 +38,14 @@ const Navbar = () => {
             </a>
           </Link>
         ))}
-        <li>
+        <li className="transition-all md:hover:scale-125 md:ml-72">
           <a href="https://www.linkedin.com/in/iman-khorshidi/">
-            <FaLinkedin className="text-3xl ml-2 mb-2 mt-1 cursor-pointer md:mb-0 md:mt-0" />
+            <FaLinkedin className="transition-all text-3xl ml-2 mb-2 mt-1 cursor-pointer hover:scale-125 md:mb-0 md:mt-0 md:hover:scale-100" />
           </a>
         </li>
-        <li>
+        <li className="transition-all md:hover:scale-125">
           <a href="https://github.com/Imankh72">
-            <FaGithub className="text-3xl ml-2 cursor-pointer" />
+            <FaGithub className="transition-all text-3xl ml-2 cursor-pointer hover:scale-125 md:hover:scale-100" />
           </a>
         </li>
       </ul>
