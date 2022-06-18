@@ -29,18 +29,18 @@ const Navbar = () => {
         </Link>
       </div>
       <ul
-        className={`flex flex-col space-y-4 absolute w-[60%] h-[100vh] bg-gray-800 py-5 px-2 ${
+        className={`flex flex-col space-y-4 absolute w-[60%] h-[100vh] bg-zinc-900 py-5 px-2 ${
           open ? "left-0" : "left-[-100%]"
         } transition-all duration-500 ease-in-out sm:w-[30%] md:flex-row md:w-auto md:h-auto md:static md:space-y-0 md:items-center md:gap-10 md:justify-center`}
       >
         {links.map((link, index) => (
           <Link href={`/${link.toLowerCase()}`} key={index}>
-            <a className="p-2 hover:cursor-pointer hover:text-gray-800 hover:bg-white w-[95%] transition-all rounded md:w-auto md:rounded-md">
+            <a className="p-2 hover:cursor-pointer hover:text-gray-800 hover:bg-gray-200 w-[95%] transition-all rounded md:w-auto md:rounded-md">
               {link}
             </a>
           </Link>
         ))}
-        <li className="transition-all md:hover:scale-125 md:ml-72">
+        <li className="transition-all md:hover:scale-125 md:ml-64">
           <a href="https://www.linkedin.com/in/iman-khorshidi/" target="_blank">
             <FaLinkedin className="transition-all text-3xl ml-2 mb-2 mt-12 cursor-pointer hover:scale-125 md:mb-0 md:mt-0 md:hover:scale-100" />
           </a>
