@@ -4,7 +4,7 @@ import { projects } from "../data/projects";
 const Projects = () => {
   return (
     <div className="darkGradient mt-14 py-6 h-[100%] md:h-[100vh]">
-      <h1 className="text-5xl pl-2 mb-8">Projects</h1>
+      <h1 className="text-4xl pl-2 mb-8 sm:text-5xl">Projects</h1>
       <div className="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-14">
         {projects.map(({ id, title, image, technologies, source, visit }) => (
           <div

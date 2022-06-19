@@ -1,5 +1,7 @@
+import Technologies from "../components/Technologies";
+
 const technologies = () => {
-  return <h1>Technologies</h1>;
+  return <Technologies />;
 };
 
 export default technologies;

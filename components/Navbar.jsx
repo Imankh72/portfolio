@@ -40,7 +40,7 @@ const Navbar = () => {
             </a>
           </Link>
         ))}
-        <li className="transition-all md:hover:scale-125 md:ml-64">
+        <li className="transition-all md:hover:scale-125 md:ml-32 lg:ml-64">
           <a href="https://www.linkedin.com/in/iman-khorshidi/" target="_blank">
             <FaLinkedin className="transition-all text-3xl ml-2 mb-2 mt-12 cursor-pointer hover:scale-125 md:mb-0 md:mt-0 md:hover:scale-100" />
           </a>
