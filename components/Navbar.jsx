@@ -10,7 +10,7 @@ const Navbar = () => {
   const links = ["Projects", "Technologies", "About"];
 
   return (
-    <nav className="navBar">
+    <nav className="navBar z-50">
       <div className="flex items-center justify-between h-full md:gap-3">
         {open ? (
           <CloseIcon
@@ -29,7 +29,7 @@ const Navbar = () => {
         </Link>
       </div>
       <ul
-        className={`flex flex-col space-y-4 absolute w-[60%] h-[100vh] bg-zinc-900 py-5 px-2 ${
+        className={`flex flex-col space-y-4 absolute w-[60%] h-[100vh] bg-neutral-900 py-5 px-2 ${
           open ? "left-0" : "left-[-100%]"
         } transition-all duration-500 ease-in-out sm:w-[30%] md:flex-row md:w-auto md:h-auto md:static md:space-y-0 md:items-center md:gap-10 md:justify-center`}
       >

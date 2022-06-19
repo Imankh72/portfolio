@@ -25,21 +25,26 @@ li {
 
 @layer components {
   .container {
-    @apply h-[100vh] sm:max-w-7xl sm:mx-auto;
+    @apply h-[100vh] text-gray-200 sm:max-w-7xl sm:mx-auto;
   }
 
   .navBar {
-    @apply bg-zinc-900 w-[100%] h-[60px] fixed top-0 left-0 text-white text-xl px-2 md:flex md:justify-between md:max-w-7xl xl:left-[50%] xl:desktopNavBar;
+    @apply bg-neutral-900 w-[100%] h-[60px] fixed top-0 left-0 text-white text-xl px-2 md:flex md:justify-between md:max-w-7xl xl:left-[50%] xl:desktopNavBar;
   }
 
   .desktopNavBar {
     transform: translateX(-50%);
   }
 
-  .hero-background {
-    background: url("/static/hero-background.png");
+  .homeBackground {
+    background: url("/static/images/hero-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  .darkGradient {
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
   }
 }
