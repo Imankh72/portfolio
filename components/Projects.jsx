@@ -9,29 +9,29 @@ const Projects = () => {
         {projects.map(({ id, title, image, technologies, source, visit }) => (
           <div
             key={id}
-            className="p-2 overflow-hidden rounded-md text-center shadow-md shadow-gray-800 w-[250px] h-[420px]"
+            className="overflow-hidden rounded-md text-center shadow-md shadow-gray-800 w-[250px] h-[420px] pb-4"
           >
             <Image src={image} width={250} height={250} />
             <h3>{title}</h3>
             <span className="w-[50px] h-[2px] rounded-md bg-yellow-200 inline-block"></span>
-            <div className="w-[90%] flex items-center justify-center gap-2 flex-wrap mb-2">
+            <div className="w-[90%] flex items-center justify-center gap-2 flex-wrap mb-2 h-[15%]">
               {technologies.map((tech, index) => (
                 <ul key={index}>
                   <li>{tech}</li>
                 </ul>
               ))}
             </div>
-            <div className="flex items-center justify-between px-4 py-2">
+            <div className="flex items-center justify-between px-4 pt-1 ">
               <a
                 href={visit}
-                className="bg-yellow-200 text-neutral-900 p-2 rounded-md cursor-pointer hover:opacity-80 transition-all"
+                className="bg-gray-200 opacity-80 text-neutral-900 px-2 py-1 rounded-md cursor-pointer hover:opacity-100 transition-all "
                 target="_blank"
               >
                 Visit
               </a>
               <a
                 href={source}
-                className="bg-yellow-200 text-neutral-900 p-2 rounded-md cursor-pointer hover:opacity-80 transition-all"
+                className="bg-gray-200 opacity-80 text-neutral-900 px-2 py-1 rounded-md cursor-pointer hover:opacity-100 transition-all"
                 target="_blank"
               >
                 Source
