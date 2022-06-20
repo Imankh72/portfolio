@@ -26,6 +26,7 @@ const Projects = () => {
                 href={visit}
                 className="bg-gray-200 opacity-80 text-neutral-900 px-2 py-1 rounded-md cursor-pointer hover:opacity-100 transition-all "
                 target="_blank"
+                rel="noreferrer"
               >
                 Visit
               </a>
@@ -33,6 +34,7 @@ const Projects = () => {
                 href={source}
                 className="bg-gray-200 opacity-80 text-neutral-900 px-2 py-1 rounded-md cursor-pointer hover:opacity-100 transition-all"
                 target="_blank"
+                rel="noreferrer"
               >
                 Source
               </a>

@@ -41,17 +41,25 @@ const Navbar = () => {
           </Link>
         ))}
         <li className="transition-all md:hover:scale-125 md:ml-12 lg:ml-64">
-          <a href="https://www.linkedin.com/in/iman-khorshidi/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/iman-khorshidi/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin className="transition-all text-3xl ml-2 mb-2 mt-12 cursor-pointer hover:scale-125 md:mb-0 md:mt-0 md:hover:scale-100" />
           </a>
         </li>
         <li className="transition-all md:hover:scale-125">
-          <a href="https://github.com/Imankh72" target="_blank">
+          <a
+            href="https://github.com/Imankh72"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub className="transition-all text-3xl ml-2 cursor-pointer hover:scale-125 md:hover:scale-100" />
           </a>
         </li>
         <li className="transition-all md:hover:scale-125">
-          <a href="https://wa.me/989361419215" target="_blank">
+          <a href="https://wa.me/989361419215" target="_blank" rel="noreferrer">
             <FaWhatsapp className="transition-all text-3xl ml-2 cursor-pointer hover:scale-125 md:hover:scale-100" />
           </a>
         </li>

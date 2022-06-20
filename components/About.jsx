@@ -7,7 +7,12 @@ const About = () => {
       <h1 className="text-4xl pl-2 mb-16 sm:text-5xl ">About</h1>
       <div className="flex flex-col items-center gap-10 md:flex-row">
         <div className="rounded-full overflow-hidden w-[280px] h-[300px] ">
-          <Image src="/static/images/iman.png" width={300} height={350} />
+          <Image
+            src="/static/images/iman.png"
+            width={300}
+            height={350}
+            alt="Hero Image"
+          />
         </div>
         <div className="pt-6 md:w-[65%]">
           <p className="text-2xl md:text-3xl">
