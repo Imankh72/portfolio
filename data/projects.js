@@ -19,7 +19,7 @@ export const projects = [
     id: "3",
     title: "Portfolio",
     technologies: ["React", "NextJs", "TailwindCss"],
-    visit: "https://iman-khorshidi.ir/",
+    visit: "https://iman-khorshidi.vercel.app/",
     source: "https://github.com/Imankh72/portfolio",
     image: "/static/images/portfolio.png",
   },
