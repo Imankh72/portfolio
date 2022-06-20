@@ -19,7 +19,7 @@ export const projects = [
     id: "3",
     title: "Portfolio",
     technologies: ["React", "NextJs", "TailwindCss"],
-    visit: "https://sipan-shop.netlify.app/",
+    visit: "https://iman-khorshidi.ir/",
     source: "https://github.com/Imankh72/portfolio",
     image: "/static/images/portfolio.png",
   },
