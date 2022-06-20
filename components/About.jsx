@@ -16,7 +16,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-4 py-4 mt-12 text-2xl ">
+      <div className="flex items-center justify-center gap-4 py-4 mt-12 text-2xl md:text-4xl md:py-2">
         <a
           className="flex items-center justify-center gap-4"
           href="/static/iman-khorshidi.pdf"
