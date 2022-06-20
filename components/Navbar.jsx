@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import MenuIcon from "./MenuIcon";
 import CloseIcon from "./CloseIcon";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -40,7 +40,7 @@ const Navbar = () => {
             </a>
           </Link>
         ))}
-        <li className="transition-all md:hover:scale-125 md:ml-32 lg:ml-64">
+        <li className="transition-all md:hover:scale-125 md:ml-12 lg:ml-64">
           <a href="https://www.linkedin.com/in/iman-khorshidi/" target="_blank">
             <FaLinkedin className="transition-all text-3xl ml-2 mb-2 mt-12 cursor-pointer hover:scale-125 md:mb-0 md:mt-0 md:hover:scale-100" />
           </a>
@@ -48,6 +48,11 @@ const Navbar = () => {
         <li className="transition-all md:hover:scale-125">
           <a href="https://github.com/Imankh72" target="_blank">
             <FaGithub className="transition-all text-3xl ml-2 cursor-pointer hover:scale-125 md:hover:scale-100" />
+          </a>
+        </li>
+        <li className="transition-all md:hover:scale-125">
+          <a href="https://wa.me/989361419215" target="_blank">
+            <FaWhatsapp className="transition-all text-3xl ml-2 cursor-pointer hover:scale-125 md:hover:scale-100" />
           </a>
         </li>
       </ul>
