@@ -5,7 +5,7 @@ const Header = () => {
     <Head>
       <title>Iman Khorshidi</title>
       <meta name="description" content="Created by iman khorshidi" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/static/images/iman-favicon.png" />
     </Head>
   );
 };
