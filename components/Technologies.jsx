@@ -2,7 +2,7 @@ import ProgressInput from "./ProgressInput";
 
 const Technologies = () => {
   return (
-    <div className="darkGradient mt-14 py-6 h-[100vh] md:h-[100vh]">
+    <div className="darkGradient mt-14 py-6 h-[100vh] ">
       <h1 className="text-4xl pl-2 mb-8 sm:text-5xl">Technologies</h1>
       <div className="grid grid-cols-1 px-2 gap-y-3 md:grid-cols-2 md:gap-y-8">
         <ProgressInput />
