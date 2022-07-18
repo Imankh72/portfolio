@@ -11,7 +11,12 @@ const Projects = () => {
             key={id}
             className="overflow-hidden rounded-md text-center shadow-md shadow-gray-800 w-[250px] h-[420px] pb-4"
           >
-            <Image src={image} width={250} height={250} />
+            <Image
+              src={image}
+              alt="cloth-shopping"
+              width="250px"
+              height="275px"
+            />
             <h3>{title}</h3>
             <span className="w-[50px] h-[2px] rounded-md bg-yellow-200 inline-block"></span>
             <div className="w-[90%] flex items-center justify-center gap-2 flex-wrap mb-2 h-[15%]">

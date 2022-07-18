@@ -1,13 +1,14 @@
 const ProgressInput = ({ label, value }) => {
+  console.log(value);
   return (
-    <div className="flex items-center justify-between w-[90%]">
-      <label>{label}</label>
-      <input
-        type="progress"
-        className="inline-block h-[24px] w-[50%] text-center font-bold text-neutral-900 rounded-md "
-        defaultValue={`${value}%`}
-        readOnly
-      />
+    <div className="flex items-center w-[90%]">
+      <label className="flex-[0.5] font-bold">{label}</label>
+      <div className="h-4 flex-1 bg-gray-200 rounded-full w-[90%]">
+        <div
+          className="h-4 bg-gray-500 rounded-full"
+          style={{ width: `${value}%` }}
+        ></div>
+      </div>
     </div>
   );
 };

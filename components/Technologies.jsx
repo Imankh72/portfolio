@@ -16,8 +16,8 @@ const Technologies = () => {
         <ProgressInput label="Styled Components" value="90" />
         <ProgressInput label="Git" value="80" />
         <ProgressInput label="NextJs" value="40" />
-        <ProgressInput label="Typescript" value="10" />
-        <ProgressInput label="Material UI" value="20" />
+        <ProgressInput label="Typescript" value="30" />
+        <ProgressInput label="Material UI" value="15" />
       </div>
     </div>
   );
